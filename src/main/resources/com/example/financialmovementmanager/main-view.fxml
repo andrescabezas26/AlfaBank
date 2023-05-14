@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.financialmovementmanager.controller.MainController">
+    <TableView fx:id="tableView">
+        <columns>
+            <TableColumn fx:id="dateColumn" text="Date" />
+            <TableColumn fx:id="typeColumn" text="Type" />
+            <TableColumn fx:id="valueColumn" text="Value" />
+            <TableColumn fx:id="descriptionColumn" text="Description" />
+        </columns>
+
+    </TableView>
+
+   <HBox prefHeight="33.0" prefWidth="400.0">
+       <Label text="Account Balance: " />
+       <Label fx:id="balance" text="" />
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </HBox>
+
+    <HBox>
+        <Button fx:id="addButton" onAction="#onAddFinancialMovement" text="Add Movement" />
+        <Button fx:id="showCost" onAction="#onShowCost" text="View Costs" />
+        <Button fx:id="showIncomes" onAction="#onShowIncome" text="View Incomes" />
+        <Button fx:id="showCombinedColumns" onAction="#onShowCombined" text="View Combined List" />
+    </HBox>
+</VBox>

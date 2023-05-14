@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.financialmovementmanager.controller.FinancialMovementController">
+
+    <VBox alignment="CENTER" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+        <Label text="Type:" />
+        <TextField fx:id="typeFinancialMovementTF"  />
+
+        <Label text="Value:" />
+        <TextField fx:id="valueFinancialMovementTF" />
+
+        <Label text="Date:" />
+        <TextField fx:id="dateFinancialMovementTF" />
+
+        <Label text="Description:" />
+        <TextField fx:id="descriptionFinancialMovementTF" />
+
+        <Button onAction="#onAddFinancialMovement" text="Add Financial Movement" />
+        <Button onAction="#onClose" text="Close" />
+    </VBox>
+</AnchorPane>
